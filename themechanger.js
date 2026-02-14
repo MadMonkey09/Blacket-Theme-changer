@@ -117,7 +117,7 @@
         applyTheme(choice);
     }
 
-    // UI container
+    // UI box
     const box = document.createElement("div");
     box.id = "blacket-theme-switcher";
     box.style.cssText = `
@@ -140,7 +140,7 @@
     box.innerHTML = `
         <div style="display:flex;justify-content:space-between;align-items:center;">
             <div style="display:flex;align-items:center;gap:6px;">
-                <span style="font-size:14px;">🎨</span>
+                <span style="font-size:14px;"></span>
                 <div style="display:flex;flex-direction:column;">
                     <span style="font-weight:600;font-size:13px;">Blacket Theme Manager</span>
                     <span id="theme-current" style="font-size:11px;color:#9ca3af;">Current: ...</span>
@@ -235,5 +235,5 @@
     if (themes[currentTheme]) applyTheme(currentTheme);
     else updateActiveButtons();
 
-    console.log("🎨 Enhanced Blacket Theme Manager loaded.");
+    console.log(" Blacket Theme changer.");
 })();
